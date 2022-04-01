@@ -1,15 +1,16 @@
-* Docker 安装 FASTDFS
+# FastDFS Docker配置
+## Docker 安装 FASTDFS
 ```
 # 启动tracker服务，注意network参数
 docker run -d --network=host --name tracker -v /app/fastdfs/tracker:/var/fdfs delron/fastdfs tracker
 # 启动storage服务，注意TRACKER_SERVER ip为宿主机ip
 docker run -d --network=host --name storage -e TRACKER_SERVER=172.17.16.5:22122 -v /app/fastdfs/storage:/var/fdfs -e GROUP_NAME=group1 delron/fastdfs storage
 ```
-- 安装 gd-devel.x86_64包
+## 安装 gd-devel.x86_64包
 ```
 yum -y install gd-devel.x86_64
 ```
-- nginx 将http_image_filter_module包含进来
+## nginx 将http_image_filter_module包含进来
 ```
 nginx -V 查看nginx当前配置
 # 进入nginx安装目录，configure 增加 --with-http_image_filter_module
@@ -17,7 +18,7 @@ nginx -V 查看nginx当前配置
 
 make && make install
 ``` 
-- 修改nginx配置文件
+## 修改nginx配置文件
 ```
 vi /usr/local/nginx/conf/nginx.conf
 ```
@@ -53,7 +54,7 @@ location ~ /group1/M00/(.+)_([0-9]+)x([0-9]+)\.(jpeg|jpg|gif|png) {
     }
 
 ```
-- 关闭nginx并重启
+## 关闭nginx并重启
 ```
 /usr/local/nginx/sbin/nginx -s stop
 /usr/local/nginx/sbin/nginx
