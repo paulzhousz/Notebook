@@ -1,0 +1,9 @@
+## Docker Compose配置文件学习
+[TOC]
+### 一、简介
+&emsp;&emsp;Docker Compose 配置文件是一个用于定义服务、网络和数据卷的 YAML 文件。其中服务定义了该服务启动的每个容器的配置，就像将命令行参数传递给 docker run 一样，网络和数据卷的定义类似于 docker network create 和 docker volume create。跟 docker run 一样，如果在 Dockerfile 中通过诸如 CMD、EXPOSE、VOLUME 和 ENV 这些指令指定了相关选项，那么在默认情况下，不需要在 docker-compose.yml 中再次指定它们。
+&emsp;&emsp;顶层的 version、services、networks 和 volumes 将 Compose 配置文件分为四个部分，其中 version 指定 Compose 配置文件的版本，services 定义服务，networks 定义网络，volumes 定义数据卷。
+### 二、详细介绍
+#### 1.配置文件版本 version
+&emsp;&emsp;当前有三种版本的 Compose 配置文件格式：Version 1、Version 2.x、Version 3.x。推荐使用Version 3.x。通过 YAML 的根配置项 version 来指定，具体配置如 version: '3'或 version: '3.1'等。
+ &emsp;&emsp;在指定 Compose 配置文件要使用的版本时，需同时指定主版本数字和次版本数字。如果未给定次版本数字，则默认使用 0 而不是最新版本，因此将不支持再更高版本中才加入的新功能。比如 version: '3'，使用的是 3.0 版本而不是目前最新的 3.8 版本。
