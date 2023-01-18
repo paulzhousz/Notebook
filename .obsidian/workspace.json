@@ -4,60 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "da4af558888456e6",
-        "type": "split",
+        "id": "1550d5141f1fbcac",
+        "type": "tabs",
         "children": [
           {
-            "id": "820d92180579d019",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "30073c81fd6ff63f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "开发文档/202204-ImageMagic pdf转jpg黑色背景.md",
-                    "mode": "preview",
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "e2a9d80b6ef0bbba",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "开发文档/202203-FastDFS Docker配置.md",
-                    "mode": "source",
-                    "source": true
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "5903f6fab3c6144c",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "335274b35c08ee1b",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "开发文档/202203-FastDFS Docker配置.md",
-                    "mode": "source",
-                    "source": false
-                  }
-                }
-              }
-            ]
+            "id": "2c286230de5e9b4d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "开发文档/202203-FastDFS Docker配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "开发文档/202203-FastDFS Docker配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "开发文档/202203-FastDFS Docker配置.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -184,16 +138,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "cc772f3e71c7f7d3",
+  "active": "2c286230de5e9b4d",
   "lastOpenFiles": [
-    "开发文档/202204-Docker基础配置.md",
     "开发文档/202203-FastDFS Docker配置.md",
+    "开发文档/202204-ImageMagic pdf转jpg黑色背景.md",
+    "开发文档/202204-Docker基础配置.md",
     "开发文档/202204-Postgresql批量重置sequence.md",
     "开发文档/postgresql 数据库备份与恢复.md",
     "img/tx.jpg",
     "img/readme.md",
     "img/20220329173709.png",
-    "img/20220329172846.png",
-    "开发文档/202204-ImageMagic pdf转jpg黑色背景.md"
+    "img/20220329172846.png"
   ]
 }
